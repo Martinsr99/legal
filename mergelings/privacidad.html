@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidad / Privacy Policy - Mergelings</title>
-<meta name="description" content="Política de privacidad oficial de Mergelings (español e inglés): sin cuentas ni compras, anuncios recompensados opcionales y no personalizados, estadísticas de uso sin tu nombre ni tu correo, asociadas a un identificador de instalación, e informes de fallos.">
+<meta name="description" content="Política de privacidad oficial de Mergelings (español e inglés): sin cuentas ni compras, anuncios recompensados opcionales y sin consentimiento para personalizarlos, estadísticas de uso sin tu nombre ni tu correo, asociadas a un identificador de instalación, e informes de fallos.">
 <style>
   :root {
     color-scheme: light dark;
@@ -83,8 +83,8 @@
 <section id="es" lang="es">
 <header class="doc">
   <h1>Política de privacidad de Mergelings</h1>
-  <p class="meta">Última actualización: 28 de septiembre de 2026 &middot; v3.1</p>
-  <div class="tldr"><p><strong>En una línea:</strong> Mergelings no tiene cuentas ni compras, y tu partida se guarda solo en tu dispositivo. Hay anuncios <strong>solo si tú quieres verlos</strong>: un vídeo recompensado que se lanza únicamente cuando tocas &laquo;VER ANUNCIO&raquo; a cambio de energía. Los sirve Unity LevelPlay (ironSource) con Unity Ads, <strong>sin personalizar</strong>, y para ello el kit de anuncios lee tu identificador de publicidad y tu dirección IP. Además el juego envía a Unity <strong>estadísticas de uso</strong>, sin tu nombre ni tu correo pero asociadas a un identificador de instalación (activadas por defecto; las apagas en Ajustes &rarr; &laquo;Datos de uso&raquo;) e <strong>informes de fallos</strong> cuando el juego se cierra por error (estos no se pueden apagar desde el juego). Nada de esto incluye tu nombre ni tu correo, pero como va ligado a identificadores de tu instalación y de tu dispositivo lo tratamos como dato personal.</p></div>
+  <p class="meta">Última actualización: 1 de octubre de 2026 &middot; v3.2</p>
+  <div class="tldr"><p><strong>En una línea:</strong> Mergelings no tiene cuentas ni compras, y tu partida se guarda solo en tu dispositivo. Hay anuncios <strong>solo si tú quieres verlos</strong>: un vídeo recompensado que se lanza únicamente cuando tocas &laquo;VER ANUNCIO&raquo; a cambio de energía. Los sirve Unity LevelPlay (ironSource) con Unity Ads; no pedimos consentimiento para <strong>anuncios personalizados</strong> y, para mostrarlos, el kit de anuncios lee tu identificador de publicidad y tu dirección IP. Además el juego envía a Unity <strong>estadísticas de uso</strong>, sin tu nombre ni tu correo pero asociadas a un identificador de instalación (activadas por defecto; las apagas en Ajustes &rarr; &laquo;Datos de uso&raquo;) e <strong>informes de fallos</strong> cuando el juego se cierra por error (estos no tienen interruptor en el juego; si no los quieres, escríbenos y pediremos a Unity que los borre: apartado 4). Nada de esto incluye tu nombre ni tu correo, pero como va ligado a identificadores de tu instalación y de tu dispositivo lo tratamos como dato personal.</p></div>
   <p class="langs"><a href="#es">Español</a><a href="#en">English</a></p>
 </header>
 
@@ -98,7 +98,7 @@
   servicios de <strong>Unity</strong> (el motor con el que está hecho):</p>
   <ul>
     <li><strong>Estadísticas de uso</strong> asociadas a un identificador de instalación (Unity Analytics) &mdash; opcionales, ver apartado 3.</li>
-    <li><strong>Informes de fallos</strong> (Unity Diagnostics) &mdash; no opcionales, ver apartado 4.</li>
+    <li><strong>Informes de fallos</strong> (Unity Diagnostics) &mdash; sin interruptor en el juego; puedes oponerte por correo, ver apartado 4.</li>
     <li><strong>Datos necesarios para mostrar anuncios recompensados</strong> (Unity LevelPlay / ironSource y Unity Ads)
     &mdash; solo cuando tú pides ver un anuncio, ver apartado 5.</li>
   </ul>
@@ -144,12 +144,17 @@
   <p>Si el juego se cierra por un error, se envía a Unity un informe con el registro del fallo (la traza del
   error), datos de diagnóstico de la aplicación y datos de rendimiento, junto con el mismo
   <strong>identificador de instalación</strong>. Lo usamos solo para arreglar errores.</p>
-  <p><strong>Estos informes no tienen interruptor.</strong> El ajuste &laquo;Datos de uso&raquo; apaga las
-  estadísticas, no los informes de fallos. Lo decimos tal cual porque así lo describe Unity en su
-  <a href="https://docs.unity.com/en-us/cloud/developer-data/privacy-overview">documentación</a>: este servicio
+  <p><strong>Estos informes no tienen interruptor dentro del juego.</strong> El ajuste &laquo;Datos de uso&raquo;
+  apaga las estadísticas, no los informes de fallos: el servicio de Unity se activa al compilar el juego y, según su
+  <a href="https://docs.unity.com/en-us/cloud/developer-data/privacy-overview">documentación</a>,
   &laquo;no dispone de un mecanismo de consentimiento ni de exclusión&raquo; (<em>does not have a consent or
-  opt-out service</em>). La base legal es nuestro interés legítimo en que el juego funcione y sea estable. Si no
-  estás de acuerdo, la única forma de evitarlos es desinstalar el juego.</p>
+  opt-out service</em>). La base legal es nuestro interés legítimo en que el juego funcione y sea estable. Solo se
+  envía un informe cuando el juego se cierra por un error.</p>
+  <p><strong>Cómo oponerte:</strong> escríbenos a <a href="mailto:silesreche.martin@gmail.com">silesreche.martin@gmail.com</a> con el
+  modelo de tu dispositivo y la fecha aproximada en que jugaste. Atenderemos tu oposición: pediremos a Unity que
+  borre los informes de fallos de tu instalación y te contestaremos en un plazo máximo de un mes. Como el juego no
+  tiene un interruptor propio para estos informes, la única forma de que no se envíe ninguno más es desinstalarlo;
+  al desinstalar se destruye el identificador de instalación y nada nuevo se asociará a ti.</p>
   <p><strong>Cuánto tiempo se guardan:</strong> <strong>90 días</strong> por defecto, según esa misma documentación.</p>
 
   <h2>5. Anuncios recompensados (Unity LevelPlay y Unity Ads)</h2>
@@ -174,19 +179,23 @@
   </ul>
   <p><strong>Cómo lo hemos configurado:</strong></p>
   <ul>
-    <li>Los anuncios <strong>no son personalizados</strong>: no pedimos consentimiento para publicidad basada en
-    intereses y comunicamos a Unity que no lo hay, de modo que los anuncios se eligen por contexto (el juego, el
-    idioma, el dispositivo), no por un perfil tuyo.</li>
+    <li><strong>No pedimos consentimiento para anuncios personalizados</strong> y comunicamos a Unity que no lo
+    hay. Unity Ads puede elegir los anuncios por señales de contexto (el juego, el idioma, el dispositivo, el país
+    aproximado). Nosotros no creamos ningún perfil tuyo ni cruzamos tus datos con los de otras aplicaciones.</li>
     <li>Activamos la señal <strong>&laquo;no vender ni compartir mis datos&raquo;</strong> (CCPA/CPRA) para todos los
     jugadores, no solo para California.</li>
     <li>Indicamos a Unity que el juego <strong>no está dirigido a niños</strong>.</li>
     <li>En iOS <strong>no pedimos el permiso de seguimiento</strong> (App Tracking Transparency) porque no seguimos a
-    nadie entre aplicaciones.</li>
+    nadie entre aplicaciones; sin ese permiso, el identificador de publicidad que recibe el kit es todo ceros.</li>
   </ul>
   <p><strong>Base legal:</strong> nuestro interés legítimo en financiar un juego gratuito con anuncios que tú decides
   ver, y la ejecución de la recompensa que has pedido. Unity trata estos datos como responsable independiente
   conforme a su propia política (enlace arriba) y los conserva según los plazos que allí indica. Puedes limitar el
   uso del identificador de publicidad en cualquier momento desde tu dispositivo (apartado 10).</p>
+  <p><strong>Avisar de un anuncio:</strong> si ves un anuncio que te parece inapropiado, entra en
+  <strong>Ajustes &rsaquo; Avisar de un anuncio</strong>. Se abre un correo a nuestra dirección de contacto con el
+  asunto ya puesto; cuéntanos qué se veía y cuándo, y lo revisaremos con Unity. Ese correo solo lleva lo que tú
+  escribas y la versión del juego.</p>
 
   <h2>6. Qué guarda el juego en tu dispositivo</h2>
   <p>Para que puedas seguir tu partida donde la dejaste, el juego escribe estos datos en el
@@ -221,8 +230,8 @@
 
   <h2>8. Menores</h2>
   <p>El juego no pide la edad ni ningún dato personal, no tiene chat, cuentas ni compras, y los datos de los
-  apartados 3, 4 y 5 son los mismos para cualquier persona: no permiten saber quién eres. Los anuncios no están
-  personalizados y hemos indicado a Unity que el juego no está dirigido a niños. Si eres madre, padre o tutor
+  apartados 3, 4 y 5 son los mismos para cualquier persona: no permiten saber quién eres. No pedimos consentimiento
+  para anuncios personalizados y hemos indicado a Unity que el juego no está dirigido a niños. Si eres madre, padre o tutor
   legal y prefieres que no se envíen las estadísticas de uso, desactívalas en <em>Ajustes &rarr; Datos de uso</em>;
   para que no se muestre ningún anuncio basta con no tocar &laquo;VER ANUNCIO&raquo;.
   Para cualquier duda, escríbenos a <a href="mailto:silesreche.martin@gmail.com">silesreche.martin@gmail.com</a>.</p>
@@ -245,6 +254,9 @@
   Play Data safety</a> y
   <a href="https://docs.unity.com/en-us/grow/levelplay/platform/legal-resources/apple-privacy-questionnaire">App
   Store App privacy</a>.</p>
+  <p>Los terceros con los que el juego comparte datos (Unity Technologies, para Unity Analytics, Unity Diagnostics,
+  Unity LevelPlay y Unity Ads) dan a esos datos una protección <strong>igual o equivalente</strong> a la que describe
+  esta política y a la que exigen las normas de las tiendas de aplicaciones. No compartimos datos con nadie más.</p>
   <p>Aparte, <strong>Google Play</strong> y la <strong>App Store</strong> aplican sus propias
   políticas cuando descargas o actualizas una aplicación, y pueden recoger datos por su cuenta (por ejemplo,
   sus propios informes de fallos, si tú lo has autorizado en los ajustes de tu sistema operativo). Ese tratamiento es
@@ -257,6 +269,8 @@
   supresión, oposición, limitación y portabilidad. Cómo ejercerlos aquí:</p>
   <ul>
     <li><strong>Oponerte a las estadísticas:</strong> <em>Ajustes &rarr; Datos de uso &rarr; No se envían</em>. Efecto inmediato.</li>
+    <li><strong>Oponerte a los informes de fallos:</strong> escríbenos (apartado 4); pediremos a Unity que borre los de
+    tu instalación. El juego no tiene interruptor para ellos.</li>
     <li><strong>Borrar lo ya enviado:</strong> escríbenos con el modelo de tu dispositivo y la fecha aproximada en
     que jugaste; como los datos no llevan tu nombre, tramitaremos con Unity el borrado del identificador de
     instalación correspondiente. Desinstalar el juego destruye ese identificador: nada nuevo se asociará a ti.</li>
@@ -284,6 +298,7 @@
 
   <h2>12. Cambios en esta política</h2>
   <ul>
+    <li><strong>Versión 3.2 (1 de octubre de 2026):</strong> se explica cómo avisar de un anuncio inapropiado desde el juego (apartado 5) y se confirma que los terceros protegen los datos igual que esta política (apartado 9); se explica cómo oponerte a los informes de fallos (apartados 4 y 10) y se precisa que no pedimos consentimiento para anuncios personalizados y que Unity Ads puede elegirlos por contexto, en lugar de decir que &laquo;no son personalizados&raquo; (apartados 5 y 8). No cambia qué se recoge.</li>
     <li><strong>Versión 3.1 (28 de septiembre de 2026):</strong> las estadísticas de uso dejan de llamarse &laquo;anónimas&raquo;: no llevan tu nombre ni tu correo, pero van asociadas a un identificador de instalación y se tratan como dato personal, igual que se declara en las fichas de las tiendas. No cambia qué se recoge.</li>
     <li><strong>Versión 3.0 (20 de septiembre de 2026):</strong> se añaden los anuncios recompensados opcionales
     (Unity LevelPlay / Unity Ads, apartado 5), sin personalización y sin permiso de seguimiento en iOS; el
@@ -302,8 +317,8 @@
 <section id="en" lang="en">
 <header class="doc">
   <h1>Mergelings Privacy Policy</h1>
-  <p class="meta">Last updated: 28 September 2026 &middot; v3.1</p>
-  <div class="tldr"><p><strong>In one line:</strong> Mergelings has no accounts and no purchases, and your saved game stays on your device. Ads appear <strong>only if you choose to watch them</strong>: a rewarded video that plays solely when you tap &ldquo;VER ANUNCIO&rdquo; (watch ad) in exchange for energy. They are served by Unity LevelPlay (ironSource) with Unity Ads, <strong>non-personalised</strong>, and for that the ads SDK reads your advertising identifier and your IP address. The game also sends Unity <strong>usage statistics</strong>, without your name or email but tied to an installation ID (on by default; switch them off in Settings &rarr; &ldquo;Datos de uso&rdquo; / Usage data) and <strong>crash reports</strong> when the game closes because of an error (these cannot be switched off from inside the game). None of this includes your name or your email, but because it is tied to identifiers of your installation and device we treat it as personal data.</p></div>
+  <p class="meta">Last updated: 1 October 2026 &middot; v3.2</p>
+  <div class="tldr"><p><strong>In one line:</strong> Mergelings has no accounts and no purchases, and your saved game stays on your device. Ads appear <strong>only if you choose to watch them</strong>: a rewarded video that plays solely when you tap &ldquo;VER ANUNCIO&rdquo; (watch ad) in exchange for energy. They are served by Unity LevelPlay (ironSource) with Unity Ads; we do not ask for consent to <strong>personalised ads</strong>, and to show them the ads SDK reads your advertising identifier and your IP address. The game also sends Unity <strong>usage statistics</strong>, without your name or email but tied to an installation ID (on by default; switch them off in Settings &rarr; &ldquo;Datos de uso&rdquo; / Usage data) and <strong>crash reports</strong> when the game closes because of an error (these have no in-game switch; if you do not want them, write to us and we will ask Unity to delete them: section 4). None of this includes your name or your email, but because it is tied to identifiers of your installation and device we treat it as personal data.</p></div>
   <p class="langs"><a href="#es">Español</a><a href="#en">English</a></p>
 </header>
 
@@ -317,7 +332,7 @@
   <strong>Unity</strong> (the engine the game is built with):</p>
   <ul>
     <li><strong>Usage statistics</strong> tied to an installation ID (Unity Analytics) &mdash; optional, see section 3.</li>
-    <li><strong>Crash reports</strong> (Unity Diagnostics) &mdash; not optional, see section 4.</li>
+    <li><strong>Crash reports</strong> (Unity Diagnostics) &mdash; no in-game switch; you can object by email, see section 4.</li>
     <li><strong>Data needed to show rewarded ads</strong> (Unity LevelPlay / ironSource and Unity Ads) &mdash; only
     when you ask to watch an ad, see section 5.</li>
   </ul>
@@ -363,11 +378,16 @@
   <p>If the game closes because of an error, a report is sent to Unity containing the crash log (the error trace),
   app diagnostics and performance data, together with the same <strong>installation ID</strong>. We use it only to
   fix bugs.</p>
-  <p><strong>These reports have no switch.</strong> The &ldquo;Datos de uso&rdquo; setting turns off the statistics,
-  not the crash reports. We say it plainly because that is how Unity describes it in its
-  <a href="https://docs.unity.com/en-us/cloud/developer-data/privacy-overview">documentation</a>: this service
+  <p><strong>These reports have no switch inside the game.</strong> The &ldquo;Datos de uso&rdquo; setting turns
+  off the statistics, not the crash reports: Unity's service is enabled when the game is built and, per its
+  <a href="https://docs.unity.com/en-us/cloud/developer-data/privacy-overview">documentation</a>, it
   &ldquo;does not have a consent or opt-out service&rdquo;. Our legal basis is our legitimate interest in keeping
-  the game working and stable. If you do not agree, the only way to avoid them is to uninstall the game.</p>
+  the game working and stable. A report is only sent when the game closes because of an error.</p>
+  <p><strong>How to object:</strong> write to us at <a href="mailto:silesreche.martin@gmail.com">silesreche.martin@gmail.com</a> with your device
+  model and the approximate date you played. We will act on your objection: we will ask Unity to delete the crash
+  reports from your installation and reply within one month at most. Because the game has no switch of its own for
+  these reports, the only way to make sure no further report is sent is to uninstall it; uninstalling destroys the
+  installation ID, so nothing new will be linked to you.</p>
   <p><strong>Retention:</strong> <strong>90 days</strong> by default, per that same documentation.</p>
 
   <h2>5. Rewarded ads (Unity LevelPlay and Unity Ads)</h2>
@@ -393,19 +413,23 @@
   </ul>
   <p><strong>How we have configured it:</strong></p>
   <ul>
-    <li>Ads are <strong>not personalised</strong>: we do not ask for consent to interest-based advertising and we tell
-    Unity that there is none, so ads are chosen by context (the game, the language, the device), not by a profile of
-    you.</li>
+    <li><strong>We do not ask for consent to personalised ads</strong> and we tell Unity that there is none. Unity
+    Ads may pick ads from contextual signals (the game, the language, the device, the approximate country). We do not
+    build any profile of you or combine your data with data from other apps.</li>
     <li>We enable the <strong>&ldquo;do not sell or share my personal information&rdquo;</strong> signal (CCPA/CPRA)
     for every player, not only in California.</li>
     <li>We tell Unity that the game is <strong>not directed to children</strong>.</li>
     <li>On iOS we <strong>do not request tracking permission</strong> (App Tracking Transparency) because we do not
-    track anyone across apps.</li>
+    track anyone across apps; without that permission, the advertising identifier the SDK receives is all zeros.</li>
   </ul>
   <p><strong>Legal basis:</strong> our legitimate interest in funding a free game through ads that you choose to
   watch, and the delivery of the reward you asked for. Unity processes this data as an independent controller under
   its own policy (linked above) and keeps it for the periods stated there. You can limit the use of your advertising
   identifier at any time from your device (section 10).</p>
+  <p><strong>Reporting an ad:</strong> if you see an ad you find inappropriate, go to <strong>Ajustes &rsaquo;
+  Avisar de un anuncio</strong> (Settings &rsaquo; Report an ad; the game is in Spanish). It opens an email to our
+  contact address with the subject already filled in; tell us what it showed and when, and we will review it with
+  Unity. That email only carries what you write and the game version.</p>
 
   <h2>6. What the game stores on your device</h2>
   <p>So that you can pick your game up where you left it, the app writes the following to its own private
@@ -440,8 +464,8 @@
 
   <h2>8. Children</h2>
   <p>The game never asks for an age or any personal detail, has no chat, accounts or purchases, and the data in
-  sections 3, 4 and 5 is the same for everyone: it cannot tell who you are. Ads are not personalised and we have
-  told Unity that the game is not directed to children. If you are a parent or legal guardian and would rather no
+  sections 3, 4 and 5 is the same for everyone: it cannot tell who you are. We do not ask for consent to personalised ads and we
+  have told Unity that the game is not directed to children. If you are a parent or legal guardian and would rather no
   usage statistics were sent, switch them off in <em>Settings &rarr; Datos de uso</em>; to make sure no ad is ever
   shown, simply never tap &ldquo;VER ANUNCIO&rdquo;. For any
   question, write to us at <a href="mailto:silesreche.martin@gmail.com">silesreche.martin@gmail.com</a>.</p>
@@ -464,6 +488,9 @@
   Play Data safety</a> and
   <a href="https://docs.unity.com/en-us/grow/levelplay/platform/legal-resources/apple-privacy-questionnaire">App
   Store App privacy</a>.</p>
+  <p>The third parties the game shares data with (Unity Technologies, for Unity Analytics, Unity Diagnostics, Unity
+  LevelPlay and Unity Ads) give that data the <strong>same or equal protection</strong> as described in this policy
+  and as required by the app store guidelines. We do not share data with anyone else.</p>
   <p>Separately, <strong>Google Play</strong> and the <strong>App Store</strong> apply their own policies when
   you download or update an app, and may collect data on their own account (for example their own crash reports, if
   you have allowed that in your operating system settings). That processing belongs to the stores, not to us. See
@@ -475,6 +502,8 @@
   to exercise them here:</p>
   <ul>
     <li><strong>Object to the statistics:</strong> <em>Settings &rarr; Datos de uso &rarr; No se envían</em>. Immediate effect.</li>
+    <li><strong>Object to the crash reports:</strong> write to us (section 4); we will ask Unity to delete the ones from
+    your installation. The game has no switch for them.</li>
     <li><strong>Erase what was already sent:</strong> write to us with your device model and the approximate date you
     played; since the data carries no name, we will arrange with Unity the deletion of the matching installation ID.
     Uninstalling the game destroys that ID: nothing new will ever be associated with you.</li>
@@ -501,6 +530,7 @@
 
   <h2>12. Changes to this policy</h2>
   <ul>
+    <li><strong>Version 3.2 (1 October 2026):</strong> explains how to report an inappropriate ad from the game (section 5) and confirms that third parties protect data as this policy does (section 9); explains how to object to crash reports (sections 4 and 10) and states that we do not ask for consent to personalised ads and that Unity Ads may pick them by context, instead of saying they are &ldquo;not personalised&rdquo; (sections 5 and 8). What is collected does not change.</li>
     <li><strong>Version 3.1 (28 September 2026):</strong> usage statistics are no longer called &ldquo;anonymous&rdquo;: they carry no name or email, but they are tied to an installation ID and treated as personal data, as declared in the store listings. What is collected does not change.</li>
     <li><strong>Version 3.0 (20 September 2026):</strong> adds optional rewarded ads (Unity LevelPlay / Unity Ads,
     section 5), non-personalised and without tracking permission on iOS; the advertising identifier joins the list of
