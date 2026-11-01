@@ -119,13 +119,18 @@
 
   <h2>3. Estadísticas de uso (Unity Analytics)</h2>
   <p>Para saber si el tutorial se entiende, en qué día la gente se queda sin contenido o qué reformas se
-  compran, el juego envía a Unity Analytics unos pocos eventos. Son exactamente estos y nada más:</p>
+  compran, el juego envía a Unity Analytics estos eventos, y nada más:</p>
   <ul>
     <li><code>session_start</code> &mdash; el juego se abre; incluye cuántos días han pasado desde que lo instalaste;</li>
     <li><code>ftue_step</code> &mdash; qué paso del tutorial has completado;</li>
-    <li><code>order_delivered</code> &mdash; qué comanda has entregado y en qué zona;</li>
-    <li><code>renovation_paid</code> &mdash; qué reforma has pagado y cuántas monedas costó;</li>
-    <li><code>energy_depleted</code> &mdash; te has quedado sin energía y en qué nivel;</li>
+    <li><code>order_delivered</code>, <code>round_completed</code>, <code>menu_pick</code>, <code>leftover_use</code> &mdash; qué comanda has entregado y en qué zona, las rondas que cierras, el menú que eliges y qué haces con lo que sobra;</li>
+    <li><code>renovation_paid</code>, <code>level_up</code>, <code>generator_merged</code> &mdash; qué reforma has pagado y cuántas monedas costó, cuándo subes de nivel y qué generadores fusionas;</li>
+    <li><code>energy_depleted</code>, <code>energy_out</code> &mdash; te has quedado sin energía, en qué nivel y qué eliges entonces;</li>
+    <li><code>ad_rewarded</code>, <code>ad_not_ready</code> &mdash; has visto un anuncio recompensado y para qué, o no había ninguno disponible;</li>
+    <li><code>streak_lit</code>, <code>streak_broken</code>, <code>daily_box_claimed</code> &mdash; tu racha de días y la caja diaria;</li>
+    <li><code>event_open</code>, <code>event_choice</code>, <code>event_upgrade</code>, <code>event_close</code> &mdash; los eventos semanales: cuándo se abren, qué eliges, qué mejoras y cómo terminan;</li>
+    <li><code>libreta_goal</code>, <code>libreta_complete</code> &mdash; las metas de la libreta que cumples;</li>
+    <li><code>notification_opened</code> &mdash; has abierto el juego desde un aviso;</li>
     <li><code>content_end_reached</code> &mdash; has llegado al final del contenido disponible.</li>
   </ul>
   <p>Ninguno de ellos lleva tu nombre, tu correo ni un identificador que hayamos creado nosotros. Para poder
@@ -146,7 +151,7 @@
   cerrada o interna de Google Play o desde TestFlight, nunca la de la tienda) envían además, con el mismo interruptor
   de <em>Ajustes &rarr; Datos de uso</em>, un registro detallado de la partida a <strong>PostHog</strong>
   (servidores en la Unión Europea): los toques en pantalla y las pantallas que abres, las fusiones y las entregas,
-  los saldos del juego cada minuto, los errores del juego y lo que escribas con el botón &laquo;Comentar&raquo;. Va
+  los saldos del juego cada minuto, los anuncios que se te ofrecen y ves, los errores del juego y lo que escribas con el botón &laquo;Comentar&raquo; (junto con el estado de la partida en ese momento), además del modelo del dispositivo, la versión del sistema y el tamaño de la pantalla. Va
   asociado a un identificador de instalación que el juego genera al azar, sin tu nombre ni tu correo, y PostHog
   anonimiza tu dirección IP. Sirve solo para encontrar fallos y mejorar el juego antes de publicarlo, y se conserva
   como máximo un año.</p>
@@ -312,7 +317,7 @@
 
   <h2>12. Cambios en esta política</h2>
   <ul>
-    <li><strong>Versión 3.3 (1 de noviembre de 2026):</strong> las versiones de prueba envían un registro detallado de la partida a PostHog, con el mismo interruptor que las estadísticas (apartados 2, 3 y 9). La versión de la tienda no cambia.</li>
+    <li><strong>Versión 3.3 (1 de noviembre de 2026):</strong> las versiones de prueba envían un registro detallado de la partida a PostHog, con el mismo interruptor que las estadísticas (apartados 2, 3 y 9). El apartado 3 lista ahora todos los eventos que el juego ya enviaba a Unity Analytics; antes solo nombraba seis. La versión de la tienda no recoge nada nuevo.</li>
     <li><strong>Versión 3.2 (1 de octubre de 2026):</strong> se explica cómo avisar de un anuncio inapropiado desde el juego (apartado 5) y se confirma que los terceros protegen los datos igual que esta política (apartado 9); se explica cómo oponerte a los informes de fallos (apartados 4 y 10) y se precisa que no pedimos consentimiento para anuncios personalizados y que Unity Ads puede elegirlos por contexto, en lugar de decir que &laquo;no son personalizados&raquo; (apartados 5 y 8). No cambia qué se recoge.</li>
     <li><strong>Versión 3.1 (28 de septiembre de 2026):</strong> las estadísticas de uso dejan de llamarse &laquo;anónimas&raquo;: no llevan tu nombre ni tu correo, pero van asociadas a un identificador de instalación y se tratan como dato personal, igual que se declara en las fichas de las tiendas. No cambia qué se recoge.</li>
     <li><strong>Versión 3.0 (20 de septiembre de 2026):</strong> se añaden los anuncios recompensados opcionales
@@ -368,13 +373,18 @@
 
   <h2>3. Usage statistics (Unity Analytics)</h2>
   <p>To learn whether the tutorial makes sense, on which day players run out of content or which renovations
-  get bought, the game sends a handful of events to Unity Analytics. These are exactly the events, and nothing else:</p>
+  get bought, the game sends these events to Unity Analytics, and nothing else:</p>
   <ul>
     <li><code>session_start</code> &mdash; the game is opened; includes how many days have passed since you installed it;</li>
     <li><code>ftue_step</code> &mdash; which tutorial step you completed;</li>
-    <li><code>order_delivered</code> &mdash; which order you delivered and in which zone;</li>
-    <li><code>renovation_paid</code> &mdash; which renovation you paid for and how many coins it cost;</li>
-    <li><code>energy_depleted</code> &mdash; you ran out of energy, and at which level;</li>
+    <li><code>order_delivered</code>, <code>round_completed</code>, <code>menu_pick</code>, <code>leftover_use</code> &mdash; which order you delivered and in which zone, the rounds you finish, the menu you pick and what you do with leftovers;</li>
+    <li><code>renovation_paid</code>, <code>level_up</code>, <code>generator_merged</code> &mdash; which renovation you paid for and how many coins it cost, when you level up and which generators you merge;</li>
+    <li><code>energy_depleted</code>, <code>energy_out</code> &mdash; you ran out of energy, at which level, and what you chose then;</li>
+    <li><code>ad_rewarded</code>, <code>ad_not_ready</code> &mdash; you watched a rewarded ad and what for, or none was available;</li>
+    <li><code>streak_lit</code>, <code>streak_broken</code>, <code>daily_box_claimed</code> &mdash; your day streak and the daily box;</li>
+    <li><code>event_open</code>, <code>event_choice</code>, <code>event_upgrade</code>, <code>event_close</code> &mdash; weekly events: when they open, what you choose, what you upgrade and how they end;</li>
+    <li><code>libreta_goal</code>, <code>libreta_complete</code> &mdash; the notebook goals you complete;</li>
+    <li><code>notification_opened</code> &mdash; you opened the game from a notification;</li>
     <li><code>content_end_reached</code> &mdash; you reached the end of the available content.</li>
   </ul>
   <p>None of them carries your name, your email or any identifier created by us. To be able to count sessions,
@@ -394,8 +404,8 @@
   <p><strong>Test versions.</strong> Test versions of the game (installed from a Google Play closed or internal test
   or from TestFlight, never the store version) also send, under the same <em>Ajustes &rarr; Datos de uso</em>
   switch, a detailed play log to <strong>PostHog</strong> (servers in the European Union): screen taps and the
-  screens you open, merges and deliveries, the game balances every minute, game errors and anything you write with
-  the &ldquo;Comentar&rdquo; (comment) button. It is tied to an installation ID the game generates at random, with no
+  screens you open, merges and deliveries, the game balances every minute, the ads you are offered and watch, game errors and anything you write with
+  the &ldquo;Comentar&rdquo; (comment) button (with the state of the game at that moment), plus the device model, the system version and the screen size. It is tied to an installation ID the game generates at random, with no
   name or email, and PostHog anonymises your IP address. It is used only to find bugs and improve the game before
   release, and is kept for at most one year.</p>
 
@@ -558,7 +568,7 @@
 
   <h2>12. Changes to this policy</h2>
   <ul>
-    <li><strong>Version 3.3 (1 November 2026):</strong> test versions send a detailed play log to PostHog, under the same switch as usage statistics (sections 2, 3 and 9). The store version does not change.</li>
+    <li><strong>Version 3.3 (1 November 2026):</strong> test versions send a detailed play log to PostHog, under the same switch as usage statistics (sections 2, 3 and 9). Section 3 now lists every event the game already sent to Unity Analytics; it used to name only six. The store version collects nothing new.</li>
     <li><strong>Version 3.2 (1 October 2026):</strong> explains how to report an inappropriate ad from the game (section 5) and confirms that third parties protect data as this policy does (section 9); explains how to object to crash reports (sections 4 and 10) and states that we do not ask for consent to personalised ads and that Unity Ads may pick them by context, instead of saying they are &ldquo;not personalised&rdquo; (sections 5 and 8). What is collected does not change.</li>
     <li><strong>Version 3.1 (28 September 2026):</strong> usage statistics are no longer called &ldquo;anonymous&rdquo;: they carry no name or email, but they are tied to an installation ID and treated as personal data, as declared in the store listings. What is collected does not change.</li>
     <li><strong>Version 3.0 (20 September 2026):</strong> adds optional rewarded ads (Unity LevelPlay / Unity Ads,
