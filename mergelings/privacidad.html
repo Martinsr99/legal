@@ -83,7 +83,7 @@
 <section id="es" lang="es">
 <header class="doc">
   <h1>Política de privacidad de Mergelings</h1>
-  <p class="meta">Última actualización: 1 de octubre de 2026 &middot; v3.2</p>
+  <p class="meta">Última actualización: 1 de noviembre de 2026 &middot; v3.3</p>
   <div class="tldr"><p><strong>En una línea:</strong> Mergelings no tiene cuentas ni compras, y tu partida se guarda solo en tu dispositivo. Hay anuncios <strong>solo si tú quieres verlos</strong>: un vídeo recompensado que se lanza únicamente cuando tocas &laquo;VER ANUNCIO&raquo; a cambio de energía. Los sirve Unity LevelPlay (ironSource) con Unity Ads; no pedimos consentimiento para <strong>anuncios personalizados</strong> y, para mostrarlos, el kit de anuncios lee tu identificador de publicidad y tu dirección IP. Además el juego envía a Unity <strong>estadísticas de uso</strong>, sin tu nombre ni tu correo pero asociadas a un identificador de instalación (activadas por defecto; las apagas en Ajustes &rarr; &laquo;Datos de uso&raquo;) e <strong>informes de fallos</strong> cuando el juego se cierra por error (estos no tienen interruptor en el juego; si no los quieres, escríbenos y pediremos a Unity que los borre: apartado 4). Nada de esto incluye tu nombre ni tu correo, pero como va ligado a identificadores de tu instalación y de tu dispositivo lo tratamos como dato personal.</p></div>
   <p class="langs"><a href="#es">Español</a><a href="#en">English</a></p>
 </header>
@@ -94,13 +94,15 @@
   <a href="mailto:silesreche.martin@gmail.com">silesreche.martin@gmail.com</a>.</p>
 
   <h2>2. Qué datos recogemos y qué no</h2>
-  <p>Desde la versión 3.0 de esta política el juego recoge tres tipos de datos, los tres a través de
+  <p>Desde la versión 3.0 de esta política la versión de la tienda recoge tres tipos de datos, los tres a través de
   servicios de <strong>Unity</strong> (el motor con el que está hecho):</p>
   <ul>
     <li><strong>Estadísticas de uso</strong> asociadas a un identificador de instalación (Unity Analytics) &mdash; opcionales, ver apartado 3.</li>
     <li><strong>Informes de fallos</strong> (Unity Diagnostics) &mdash; sin interruptor en el juego; puedes oponerte por correo, ver apartado 4.</li>
     <li><strong>Datos necesarios para mostrar anuncios recompensados</strong> (Unity LevelPlay / ironSource y Unity Ads)
     &mdash; solo cuando tú pides ver un anuncio, ver apartado 5.</li>
+    <li>Solo en las <strong>versiones de prueba</strong>, nunca en la de la tienda: un <strong>registro detallado
+    de la partida</strong> (PostHog) &mdash; con el mismo interruptor que las estadísticas, ver apartado 3.</li>
   </ul>
   <p>El juego sigue <strong>sin</strong> recoger:</p>
   <ul>
@@ -139,6 +141,15 @@
   de enviar eventos al instante. El juego funciona exactamente igual con o sin ello.</p>
   <p><strong>Cuánto tiempo se guardan:</strong> Unity conserva estos datos <strong>13 meses</strong> por defecto,
   según la documentación enlazada arriba.</p>
+
+  <p><strong>Versiones de prueba.</strong> Las versiones de prueba del juego (las que se instalan desde una prueba
+  cerrada o interna de Google Play o desde TestFlight, nunca la de la tienda) envían además, con el mismo interruptor
+  de <em>Ajustes &rarr; Datos de uso</em>, un registro detallado de la partida a <strong>PostHog</strong>
+  (servidores en la Unión Europea): los toques en pantalla y las pantallas que abres, las fusiones y las entregas,
+  los saldos del juego cada minuto, los errores del juego y lo que escribas con el botón &laquo;Comentar&raquo;. Va
+  asociado a un identificador de instalación que el juego genera al azar, sin tu nombre ni tu correo, y PostHog
+  anonimiza tu dirección IP. Sirve solo para encontrar fallos y mejorar el juego antes de publicarlo, y se conserva
+  como máximo un año.</p>
 
   <h2>4. Informes de fallos (Unity Diagnostics)</h2>
   <p>Si el juego se cierra por un error, se envía a Unity un informe con el registro del fallo (la traza del
@@ -254,8 +265,11 @@
   Play Data safety</a> y
   <a href="https://docs.unity.com/en-us/grow/levelplay/platform/legal-resources/apple-privacy-questionnaire">App
   Store App privacy</a>.</p>
+  <p><strong>PostHog Inc.</strong> trata, solo en las versiones de prueba, el registro de partida del apartado 3 por
+  cuenta nuestra, como encargado del tratamiento, en servidores de la Unión Europea; no lo vende ni lo usa para
+  publicidad. Su <a href="https://posthog.com/privacy">política de privacidad</a>.</p>
   <p>Los terceros con los que el juego comparte datos (Unity Technologies, para Unity Analytics, Unity Diagnostics,
-  Unity LevelPlay y Unity Ads) dan a esos datos una protección <strong>igual o equivalente</strong> a la que describe
+  Unity LevelPlay y Unity Ads, y PostHog en las versiones de prueba) dan a esos datos una protección <strong>igual o equivalente</strong> a la que describe
   esta política y a la que exigen las normas de las tiendas de aplicaciones. No compartimos datos con nadie más.</p>
   <p>Aparte, <strong>Google Play</strong> y la <strong>App Store</strong> aplican sus propias
   políticas cuando descargas o actualizas una aplicación, y pueden recoger datos por su cuenta (por ejemplo,
@@ -298,6 +312,7 @@
 
   <h2>12. Cambios en esta política</h2>
   <ul>
+    <li><strong>Versión 3.3 (1 de noviembre de 2026):</strong> las versiones de prueba envían un registro detallado de la partida a PostHog, con el mismo interruptor que las estadísticas (apartados 2, 3 y 9). La versión de la tienda no cambia.</li>
     <li><strong>Versión 3.2 (1 de octubre de 2026):</strong> se explica cómo avisar de un anuncio inapropiado desde el juego (apartado 5) y se confirma que los terceros protegen los datos igual que esta política (apartado 9); se explica cómo oponerte a los informes de fallos (apartados 4 y 10) y se precisa que no pedimos consentimiento para anuncios personalizados y que Unity Ads puede elegirlos por contexto, en lugar de decir que &laquo;no son personalizados&raquo; (apartados 5 y 8). No cambia qué se recoge.</li>
     <li><strong>Versión 3.1 (28 de septiembre de 2026):</strong> las estadísticas de uso dejan de llamarse &laquo;anónimas&raquo;: no llevan tu nombre ni tu correo, pero van asociadas a un identificador de instalación y se tratan como dato personal, igual que se declara en las fichas de las tiendas. No cambia qué se recoge.</li>
     <li><strong>Versión 3.0 (20 de septiembre de 2026):</strong> se añaden los anuncios recompensados opcionales
@@ -317,7 +332,7 @@
 <section id="en" lang="en">
 <header class="doc">
   <h1>Mergelings Privacy Policy</h1>
-  <p class="meta">Last updated: 1 October 2026 &middot; v3.2</p>
+  <p class="meta">Last updated: 1 November 2026 &middot; v3.3</p>
   <div class="tldr"><p><strong>In one line:</strong> Mergelings has no accounts and no purchases, and your saved game stays on your device. Ads appear <strong>only if you choose to watch them</strong>: a rewarded video that plays solely when you tap &ldquo;VER ANUNCIO&rdquo; (watch ad) in exchange for energy. They are served by Unity LevelPlay (ironSource) with Unity Ads; we do not ask for consent to <strong>personalised ads</strong>, and to show them the ads SDK reads your advertising identifier and your IP address. The game also sends Unity <strong>usage statistics</strong>, without your name or email but tied to an installation ID (on by default; switch them off in Settings &rarr; &ldquo;Datos de uso&rdquo; / Usage data) and <strong>crash reports</strong> when the game closes because of an error (these have no in-game switch; if you do not want them, write to us and we will ask Unity to delete them: section 4). None of this includes your name or your email, but because it is tied to identifiers of your installation and device we treat it as personal data.</p></div>
   <p class="langs"><a href="#es">Español</a><a href="#en">English</a></p>
 </header>
@@ -328,13 +343,15 @@
   <a href="mailto:silesreche.martin@gmail.com">silesreche.martin@gmail.com</a>.</p>
 
   <h2>2. What we collect and what we do not</h2>
-  <p>As of version 3.0 of this policy the game collects three kinds of data, all through services of
+  <p>As of version 3.0 of this policy the store version of the game collects three kinds of data, all through services of
   <strong>Unity</strong> (the engine the game is built with):</p>
   <ul>
     <li><strong>Usage statistics</strong> tied to an installation ID (Unity Analytics) &mdash; optional, see section 3.</li>
     <li><strong>Crash reports</strong> (Unity Diagnostics) &mdash; no in-game switch; you can object by email, see section 4.</li>
     <li><strong>Data needed to show rewarded ads</strong> (Unity LevelPlay / ironSource and Unity Ads) &mdash; only
     when you ask to watch an ad, see section 5.</li>
+    <li>Only in <strong>test versions</strong>, never in the store version: a <strong>detailed play log</strong>
+    (PostHog) &mdash; under the same switch as usage statistics, see section 3.</li>
   </ul>
   <p>The game still does <strong>not</strong> collect:</p>
   <ul>
@@ -373,6 +390,14 @@
   <code>EndUserConsent</code> function) and stops sending events immediately. The game plays exactly the same either way.</p>
   <p><strong>Retention:</strong> Unity keeps this data for <strong>13 months</strong> by default, per the
   documentation linked above.</p>
+
+  <p><strong>Test versions.</strong> Test versions of the game (installed from a Google Play closed or internal test
+  or from TestFlight, never the store version) also send, under the same <em>Ajustes &rarr; Datos de uso</em>
+  switch, a detailed play log to <strong>PostHog</strong> (servers in the European Union): screen taps and the
+  screens you open, merges and deliveries, the game balances every minute, game errors and anything you write with
+  the &ldquo;Comentar&rdquo; (comment) button. It is tied to an installation ID the game generates at random, with no
+  name or email, and PostHog anonymises your IP address. It is used only to find bugs and improve the game before
+  release, and is kept for at most one year.</p>
 
   <h2>4. Crash reports (Unity Diagnostics)</h2>
   <p>If the game closes because of an error, a report is sent to Unity containing the crash log (the error trace),
@@ -488,8 +513,11 @@
   Play Data safety</a> and
   <a href="https://docs.unity.com/en-us/grow/levelplay/platform/legal-resources/apple-privacy-questionnaire">App
   Store App privacy</a>.</p>
+  <p><strong>PostHog Inc.</strong> processes, only in test versions, the play log in section 3 on our behalf, as a
+  processor, on servers in the European Union; it does not sell it or use it for advertising. Its
+  <a href="https://posthog.com/privacy">privacy policy</a>.</p>
   <p>The third parties the game shares data with (Unity Technologies, for Unity Analytics, Unity Diagnostics, Unity
-  LevelPlay and Unity Ads) give that data the <strong>same or equal protection</strong> as described in this policy
+  LevelPlay and Unity Ads, and PostHog in test versions) give that data the <strong>same or equal protection</strong> as described in this policy
   and as required by the app store guidelines. We do not share data with anyone else.</p>
   <p>Separately, <strong>Google Play</strong> and the <strong>App Store</strong> apply their own policies when
   you download or update an app, and may collect data on their own account (for example their own crash reports, if
@@ -530,6 +558,7 @@
 
   <h2>12. Changes to this policy</h2>
   <ul>
+    <li><strong>Version 3.3 (1 November 2026):</strong> test versions send a detailed play log to PostHog, under the same switch as usage statistics (sections 2, 3 and 9). The store version does not change.</li>
     <li><strong>Version 3.2 (1 October 2026):</strong> explains how to report an inappropriate ad from the game (section 5) and confirms that third parties protect data as this policy does (section 9); explains how to object to crash reports (sections 4 and 10) and states that we do not ask for consent to personalised ads and that Unity Ads may pick them by context, instead of saying they are &ldquo;not personalised&rdquo; (sections 5 and 8). What is collected does not change.</li>
     <li><strong>Version 3.1 (28 September 2026):</strong> usage statistics are no longer called &ldquo;anonymous&rdquo;: they carry no name or email, but they are tied to an installation ID and treated as personal data, as declared in the store listings. What is collected does not change.</li>
     <li><strong>Version 3.0 (20 September 2026):</strong> adds optional rewarded ads (Unity LevelPlay / Unity Ads,
